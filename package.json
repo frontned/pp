@@ -1,0 +1,23 @@
+{
+  "name": "pp",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontned/pp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontned/pp/issues"
+  },
+  "homepage": "https://github.com/frontned/pp#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
