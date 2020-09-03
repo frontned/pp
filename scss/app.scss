@@ -1,3 +1,15 @@
-main {
-  background-color: red;
+@import './header';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4EDE7;
+  background-image: url('../images/textura.svg');
+}
+
+@font-face {
+  font-family: Athene;
+  src: url('../fonts/Athene.otf');
 }
