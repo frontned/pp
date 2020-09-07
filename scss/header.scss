@@ -30,7 +30,7 @@
 
         a {
           text-decoration: none;
-          color: #000;
+          color: #21386E;
         }
       }
     }
@@ -39,62 +39,82 @@
   .home {
     display: flex;
     justify-content: space-between;
+    padding: 50px 0;
 
     .left {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       width: 50%;
+
+      .name {
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 50px;
+        padding-left: 200px;
+        letter-spacing: 4px;
+        color: #21386E;
+        text-align: center;
+        user-select: none;
+      }
 
       .title {
         position: relative;
         text-transform: uppercase;
-        font-size: 167px;
+        font-size: 150px;
         font-family: Athene;
         padding-left: 100px;
+        color: #21386E;
+        user-select: none;
 
         &--one {
           &:before {
             content: '';
             position: absolute;
-            top: 0;
-            width: 1000px;
+            top: -1px;
+            width: 840px;
             height: 3px;
             left: -100px;
-            background-color: #000;
+            background-color: #21386E;
           }
 
           &:after {
             content: '';
             position: absolute;
-            bottom: 25px;
-            width: 1000px;
+            bottom: 24px;
+            width: 840px;
             height: 3px;
             left: -100px;
-            background-color: #000;
+            background-color: #21386E;
           }
         }
 
         &--two {
+          margin-left: 50px;
+          top: -26px;
+
           &:after {
             content: '';
             position: absolute;
-            bottom: 25px;
-            width: 1000px;
+            bottom: 24px;
+            width: 840px;
             height: 3px;
-            left: -100px;
-            background-color: #000;
+            left: -150px;
+            background-color: #21386E;
           }
         }
 
         &--three {
+          top: -52px;
+          left: -150px;
+
           &:after {
             content: '';
             position: absolute;
-            bottom: 25px;
-            width: 1000px;
+            bottom: 23px;
+            width: 990px;
             height: 3px;
             left: -100px;
-            background-color: #000;
+            background-color: #21386E;
           }
         }
       }
@@ -105,8 +125,8 @@
 
       .photo {
         margin-top: 50px;
-        width: 674px;
-        height: 851px;
+        width: 640px;
+        height: 800px;
       }
     }
   }
