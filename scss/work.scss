@@ -1,0 +1,46 @@
+.work {
+  padding: 100px 164px;
+
+  &-item {
+    position: relative;
+    display: flex;
+    padding-top: 150px;
+    align-items: center;
+
+    &__number {
+      position: absolute;
+      top: 6%;
+      right: 23%;
+    }
+
+    &__image {
+      width: 45%;
+    }
+  }
+
+  &-about {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    color: #20386E;
+    width: 600px;
+    left: -30px;
+
+    &__title {
+      font-size: 80px;
+      font-weight: 600;
+    }
+
+    &__caption {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    &__description {
+      padding-top: 30px;
+      font-size: 22px;
+      line-height: 44px;
+    }
+  }
+}
