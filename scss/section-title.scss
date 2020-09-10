@@ -11,14 +11,14 @@
 
     div {
       position: absolute;
-      font-size: 20px;
+      font-size: 1vw;
       transform: rotate(90deg);
-      left: -60px;
-      bottom: 69px;
+      left: -12%;
+      bottom: 50%;
     }
 
     h2 {
-      font-size: 139px;
+      font-size: 6vw;
       text-transform: uppercase;
     }
   }
@@ -34,7 +34,7 @@
   &--more-space {
     .section-title__text {
       div {
-        left: -90px;
+        left: -20%;
       }
     }
   }

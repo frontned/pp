@@ -61,5 +61,7 @@
   .background-element {
     position: absolute;
     bottom: 0;
+    pointer-events: none;
+    width: 100%;
   }
 }
