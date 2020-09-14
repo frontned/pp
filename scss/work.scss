@@ -1,3 +1,5 @@
+@import './breakpoints';
+
 .work {
   padding: 100px 164px;
 
@@ -42,5 +44,11 @@
       font-size: 22px;
       line-height: 44px;
     }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .work {
+    display: none;
   }
 }
