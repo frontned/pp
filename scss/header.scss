@@ -171,7 +171,7 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
-          font-size: 11vw;
+          font-size: 40px;
 
           &--one {
             &:before {
@@ -212,25 +212,19 @@
         width: 100%;
 
         .photo {
-          width: 70%;
+          width: 50%;
         }
       }
     }
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media (min-width: $tablet-min) {
   .header {
     .home {
-      .left {
-        .title {
-          font-size: 7vw;
-        }
-      }
-
       .right {
         .photo {
-          width: 40%;
+          width: 30%;
         }
       }
     }

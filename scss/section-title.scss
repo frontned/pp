@@ -49,14 +49,14 @@
 
       div {
         position: absolute;
-        font-size: 4vw;
+        font-size: 12px;
         transform: rotate(90deg);
         left: -22%;
         bottom: 30%;
       }
 
       h2 {
-        font-size: 14vw;
+        font-size: 40px;
       }
     }
 
@@ -74,16 +74,3 @@
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
-  .section-title {
-    &__text {
-      div {
-        font-size: 2vw;
-      }
-
-      h2 {
-        font-size: 8vw;
-      }
-    }
-  }
-}

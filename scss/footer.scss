@@ -75,46 +75,15 @@
 
       .contact {
         flex-direction: column;
-
-        &__item {
-          &-title {
-            font-size: 10vw;
-          }
-
-          &-description {
-            font-size: 5vw;
-          }
-
-          &:last-child {
-            padding-left: 0;
-            padding-top: 20px;
-          }
-        }
-      }
-
-      .social {
         padding-top: 70px;
-      }
-    }
 
-    .right {
-      display: none;
-    }
-  }
-}
-
-
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
-  .footer {
-    .left {
-      .contact {
         &__item {
           &-title {
-            font-size: 3vw;
+            font-size: 20px;
           }
 
           &-description {
-            font-size: 2vw;
+            font-size: 14px;
           }
 
           &:last-child {

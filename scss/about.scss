@@ -77,14 +77,14 @@
         align-items: center;
 
         .background {
-          width: 70%;
+          width: 50%;
           top: 0;
           left: 0;
         }
 
         .description {
-          font-size: 5vw;
-          line-height: 6vw;
+          font-size: 14px;
+          line-height: 19px;
           height: 146px;
           overflow: hidden;
         }
@@ -97,24 +97,14 @@
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media (min-width: $tablet-min) {
   .about {
     .content {
       .art {
         .background {
-          width: 40%;
-        }
-
-        .description {
-          font-size: 2vw;
-          line-height: 3vw;
-          height: 125px;
+          width: 30%;
         }
       }
-    }
-
-    .background-element {
-      display: none;
     }
   }
 }

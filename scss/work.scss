@@ -76,7 +76,7 @@
         top: auto;
         right: 0;
         bottom: -8%;
-        width: 70%;
+        width: 50%;
       }
 
       &__image {
@@ -99,49 +99,27 @@
         left: 0;
 
         &__title {
-          font-size: 12vw;
+          font-size: 40px;
         }
 
         &__caption {
-          font-size: 5vw;
+          font-size: 16px;
         }
 
         &__description {
-          font-size: 5vw;
-          line-height: 6vw;
+          font-size: 16px;
+          line-height: 32px;
         }
       }
     }
   }
 }
 
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+@media (min-width: $tablet-min) {
   .work {
     &-item {
       &__number {
         width: 30%;
-      }
-
-      &__image {
-        &--mobile {
-          width: 90%;
-          height: 480px;
-        }
-      }
-
-      .work-about {
-        &__title {
-          font-size: 6vw;
-        }
-
-        &__caption {
-          font-size: 3vw;
-        }
-
-        &__description {
-          font-size: 3vw;
-          line-height: 4vw;
-        }
       }
     }
   }
