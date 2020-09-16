@@ -3,13 +3,16 @@
 .about {
   position: relative;
   background-color: #21386E;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .background {
     position: relative;
     top: -80px;
     left: -45px;
-    width: 461px;
-    height: 573px;
+    width: 30%;
     transition: 0.5s;
     transform-origin: 0 0;
 
@@ -39,8 +42,6 @@
   }
 
   .content {
-    padding: 100px 0;
-
     .art {
       display: flex;
       justify-content: center;
@@ -70,6 +71,50 @@
 
 @media (max-width: $mobile-max) {
   .about {
-    display: none;
+    .content {
+      .art {
+        flex-direction: column;
+        align-items: center;
+
+        .background {
+          width: 70%;
+          top: 0;
+          left: 0;
+        }
+
+        .description {
+          font-size: 5vw;
+          line-height: 6vw;
+          height: 146px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .background-element {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .about {
+    .content {
+      .art {
+        .background {
+          width: 40%;
+        }
+
+        .description {
+          font-size: 2vw;
+          line-height: 3vw;
+          height: 125px;
+        }
+      }
+    }
+
+    .background-element {
+      display: none;
+    }
   }
 }

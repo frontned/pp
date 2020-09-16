@@ -1,22 +1,35 @@
 @import './breakpoints';
 
 .work {
-  padding: 100px 164px;
+  padding-bottom: 7%;
+
+  .section-title {
+    padding-top: 7%;
+
+    &__text {
+      padding-left: 11%;
+    }
+  }
 
   &-item {
     position: relative;
     display: flex;
     padding-top: 150px;
     align-items: center;
+    justify-content: center;
 
     &__number {
       position: absolute;
       top: 6%;
-      right: 23%;
+      right: 40%;
     }
 
     &__image {
-      width: 45%;
+      width: 35%;
+
+      &--mobile {
+        display: none;
+      }
     }
   }
 
@@ -28,27 +41,108 @@
     left: -30px;
 
     &__title {
-      font-size: 80px;
+      font-size: 4vw;
       font-weight: 600;
     }
 
     &__caption {
       font-family: 'Playfair Display', serif;
       font-style: italic;
-      font-size: 20px;
+      font-size: 1.3vw;
       padding-top: 10px;
     }
 
     &__description {
       padding-top: 30px;
-      font-size: 22px;
-      line-height: 44px;
+      font-size: 1.4vw;
+      line-height: 2.8vw;
     }
   }
 }
 
 @media (max-width: $mobile-max) {
   .work {
-    display: none;
+    padding-bottom: 20%;
+
+    .section-title__text {
+      padding-left: 0;
+    }
+
+    &-item {
+      padding-top: 100px;
+      flex-direction: column;
+
+      &__number {
+        top: auto;
+        right: 0;
+        bottom: -8%;
+        width: 70%;
+      }
+
+      &__image {
+        display: none;
+
+        &--mobile {
+          display: block;
+          width: 90%;
+          height: 240px;
+          background-image: url('../images/innuendo2.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      .work-about {
+        padding-top: 20px;
+        width: 90%;
+        left: 0;
+
+        &__title {
+          font-size: 12vw;
+        }
+
+        &__caption {
+          font-size: 5vw;
+        }
+
+        &__description {
+          font-size: 5vw;
+          line-height: 6vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .work {
+    &-item {
+      &__number {
+        width: 30%;
+      }
+
+      &__image {
+        &--mobile {
+          width: 90%;
+          height: 480px;
+        }
+      }
+
+      .work-about {
+        &__title {
+          font-size: 6vw;
+        }
+
+        &__caption {
+          font-size: 3vw;
+        }
+
+        &__description {
+          font-size: 3vw;
+          line-height: 4vw;
+        }
+      }
+    }
   }
 }

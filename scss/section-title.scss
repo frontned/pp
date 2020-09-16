@@ -1,5 +1,7 @@
+@import './breakpoints';
+
 .section-title {
-  font-family: Athene;
+  font-family: Athene, sans-serif;
   color: #F2EAD9;
   display: flex;
   justify-content: center;
@@ -35,6 +37,52 @@
     .section-title__text {
       div {
         left: -20%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .section-title {
+    &__text {
+      top: 20px;
+
+      div {
+        position: absolute;
+        font-size: 4vw;
+        transform: rotate(90deg);
+        left: -22%;
+        bottom: 30%;
+      }
+
+      h2 {
+        font-size: 14vw;
+      }
+    }
+
+    &--flex-start {
+      justify-content: center;
+    }
+
+    &--more-space {
+      .section-title__text {
+        div {
+          left: -35%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .section-title {
+    &__text {
+      div {
+        font-size: 2vw;
+      }
+
+      h2 {
+        font-size: 8vw;
       }
     }
   }

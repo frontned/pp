@@ -41,7 +41,7 @@
   .home {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    height: calc(100vh - 63px);
 
     .left {
       display: flex;
@@ -123,10 +123,12 @@
     }
 
     .right {
+      display: flex;
+      align-items: center;
       width: 50%;
 
       .photo {
-        width: 70%;
+        width: 50%;
       }
     }
   }
@@ -154,6 +156,8 @@
 
     .home {
       flex-direction: column-reverse;
+      justify-content: center;
+      height: calc(100vh - 52px);
 
       .left {
         width: 100%;
@@ -206,6 +210,28 @@
         display: flex;
         justify-content: center;
         width: 100%;
+
+        .photo {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .header {
+    .home {
+      .left {
+        .title {
+          font-size: 7vw;
+        }
+      }
+
+      .right {
+        .photo {
+          width: 40%;
+        }
       }
     }
   }
