@@ -74,3 +74,34 @@
   }
 }
 
+@media (min-width: $mobile-max) and (max-width: $tablet-max) {
+  .section-title {
+    &__text {
+      top: 20px;
+
+      div {
+        position: absolute;
+        font-size: 20px;
+        transform: rotate(90deg);
+        left: -14%;
+        bottom: 50%;
+      }
+
+      h2 {
+        font-size: 100px;
+      }
+    }
+
+    &--flex-start {
+      justify-content: center;
+    }
+
+    &--more-space {
+      .section-title__text {
+        div {
+          left: -24%;
+        }
+      }
+    }
+  }
+}
