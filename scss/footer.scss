@@ -106,6 +106,8 @@
 
 @media (min-width: $mobile-max) and (max-width: $tablet-max) {
   .footer {
+    min-height: 630px;
+
     .left {
       width: 100%;
 

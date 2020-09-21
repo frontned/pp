@@ -3,6 +3,7 @@
 @import './section-title';
 @import './work';
 @import './footer';
+@import './full-screen-menu';
 
 * {
   box-sizing: border-box;
@@ -10,7 +11,8 @@
 
 body {
   background-color: #F4EDE7;
-  background-image: url('../images/textura.svg');
+  background-image: url('../images/textura_loopinelis.png');
+  background-repeat: repeat;
 }
 
 @font-face {

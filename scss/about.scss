@@ -4,6 +4,7 @@
   position: relative;
   background-color: #21386E;
   height: 100vh;
+  min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +72,8 @@
 
 @media (max-width: $mobile-max) {
   .about {
+    min-height: auto;
+
     .content {
       .art {
         flex-direction: column;
@@ -99,6 +102,8 @@
 
 @media (min-width: $mobile-max) and (max-width: $tablet-max) {
   .about {
+    min-height: 1200px;
+
     .content {
       .art {
         flex-direction: column;

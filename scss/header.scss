@@ -36,12 +36,17 @@
         }
       }
     }
+
+    &__burger {
+      display: none;
+    }
   }
 
   .home {
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 63px);
+    min-height: 600px;
 
     .left {
       display: flex;
@@ -73,9 +78,9 @@
             content: '';
             position: absolute;
             top: -1px;
-            width: 117%;
+            width: 150%;
             height: 3px;
-            left: -17%;
+            left: -50%;
             background-color: #21386E;
           }
 
@@ -83,9 +88,9 @@
             content: '';
             position: absolute;
             bottom: 14%;
-            width: 116%;
+            width: 150%;
             height: 3px;
-            left: -16%;
+            left: -50%;
             background-color: #21386E;
           }
         }
@@ -98,9 +103,9 @@
             content: '';
             position: absolute;
             bottom: 14%;
-            width: 127%;
+            width: 150%;
             height: 3px;
-            left: -27%;
+            left: -50%;
             background-color: #21386E;
           }
         }
@@ -113,9 +118,9 @@
             content: '';
             position: absolute;
             bottom: 14%;
-            width: 154%;
+            width: 170%;
             height: 3px;
-            left: -34%;
+            left: -50%;
             background-color: #21386E;
           }
         }
@@ -152,12 +157,17 @@
       &-list {
         display: none;
       }
+
+      &__burger {
+        display: block;
+      }
     }
 
     .home {
       flex-direction: column-reverse;
       justify-content: center;
       height: calc(100vh - 52px);
+      min-height: auto;
 
       .left {
         width: 100%;
@@ -227,6 +237,7 @@
       flex-direction: column-reverse;
       justify-content: center;
       height: calc(100vh - 52px);
+      min-height: 1100px;
 
       .left {
         width: 100%;
@@ -288,15 +299,3 @@
     }
   }
 }
-
-//@media (min-width: $tablet-min) and (max-width: $mobile-max) {
-//  .header {
-//    .home {
-//      .right {
-//        .photo {
-//          width: 30%;
-//        }
-//      }
-//    }
-//  }
-//}
