@@ -125,6 +125,12 @@
           }
         }
       }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        padding-left: 200px;
+      }
     }
 
     .right {
