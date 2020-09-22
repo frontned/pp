@@ -1,18 +1,23 @@
-const burgers = document.querySelectorAll('.js-burger')
 const fullScreenMenu = document.querySelector('.js-full-screen-menu')
 let open = false
 
-burgers.forEach(burger => {
-  burger.addEventListener('click', () => {
-    open = !open
+const initEventListeners = () => {
+  const burgers = document.querySelectorAll('.js-burger')
+
+  burgers.forEach(burger => {
+    burger.addEventListener('click', () => {
+      open = !open
+      handleFullScreenMenu()
+    })
+  })
+
+  fullScreenMenu.addEventListener('click', () => {
+    open = false
     handleFullScreenMenu()
   })
-})
+}
 
-fullScreenMenu.addEventListener('click', () => {
-  open = false
-  handleFullScreenMenu()
-})
+initEventListeners()
 
 const handleFullScreenMenu = () => {
   if (open) {
@@ -23,5 +28,3 @@ const handleFullScreenMenu = () => {
     fullScreenMenu.classList.remove('full-screen-menu--open')
   }
 }
-
-
