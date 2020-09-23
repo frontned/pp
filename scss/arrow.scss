@@ -1,5 +1,6 @@
 .arrow {
   position: relative;
+  cursor: pointer;
 
   &__inner {
     position: absolute;
@@ -10,6 +11,21 @@
     transition: 0.2s;
     top: 50%;
     left: 50%;
+  }
+
+  &__pointer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    svg {
+      width: 10px;
+      transition: 0.3s;
+
+      * {
+        stroke: #F07763;
+      }
+    }
   }
 
   img {
@@ -23,6 +39,16 @@
       height: 60px;
       top: -4px;
       left: -5px;
+    }
+
+    .arrow__pointer {
+      svg {
+        width: 15px;
+
+        * {
+          stroke: #fff;
+        }
+      }
     }
 
     img {
