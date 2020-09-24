@@ -152,10 +152,41 @@
           display: block;
           width: 90%;
           height: 240px;
-          background-image: url('../images/innuendo2.jpg');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
+
+          &-one {
+            background-image: url('../images/innuendo2.jpg');
+          }
+
+          &-two {
+            background-image: url('../images/toilet.jpg');
+          }
+
+          &-three {
+            background-image: url('../images/eskedar_coffee.jpg');
+          }
+
+          &-four {
+            background-image: url('../images/remote_tulik_1600x1200.jpg');
+          }
+
+          &-five {
+            background-image: url('../images/DF_socials.jpg');
+          }
+
+          &-six {
+            background-image: url('../images/kvietimas_final.jpg');
+          }
+
+          &-seven {
+            background-image: url('../images/kvietimas_final.jpg');
+          }
+
+          &-eight {
+            background-image: url('../images/DF_socials.jpg');
+          }
         }
       }
 
