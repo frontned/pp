@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
 
+  .section-title {
+    padding-right: 220px;
+  }
+
   .background {
     position: relative;
     top: -80px;
@@ -74,6 +78,10 @@
   .about {
     min-height: 670px;
 
+    .section-title {
+      padding-right: 0;
+    }
+
     .content {
       .art {
         flex-direction: column;
@@ -102,6 +110,10 @@
 @media (min-width: $mobile-max) and (max-width: $tablet-max) {
   .about {
     min-height: 1200px;
+
+    .section-title {
+      padding-right: 0;
+    }
 
     .content {
       .art {

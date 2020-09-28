@@ -1,15 +1,14 @@
-const workSection = document.querySelector('.js-work')
-const firstWorkItem = document.querySelector('.js-first-work-item')
-let visible = false
+const workItems = document.querySelectorAll('.js-work-item')
 
 window.addEventListener('scroll', () => {
-  if (workSection.getBoundingClientRect().y <= -50) {
-    visible = true
-    firstWorkItem.classList.add('animate')
-  } else {
-    visible = false
-    firstWorkItem.classList.remove('animate')
-  }
+  Array.from(workItems).forEach(workItem => {
+    console.log(workItem.getBoundingClientRect().y)
+    if (workItem.getBoundingClientRect().y <= 100) {
+      workItem.classList.add('animate')
+    } else {
+      workItem.classList.remove('animate')
+    }
+  })
 })
 
 
