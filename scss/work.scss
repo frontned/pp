@@ -31,10 +31,12 @@
     &__image {
       width: 25%;
       filter: grayscale(1);
+      opacity: 0.4;
       transition: 0.3s;
 
       &:hover {
         filter: none;
+        opacity: 1;
       }
 
       &--mobile {
@@ -104,6 +106,22 @@
     &--reverse {
       flex-direction: row-reverse;
     }
+
+    &--bigger-image {
+      .work-item__image {
+        width: 35%;
+      }
+    }
+
+    &--more-space {
+      .work-item__number {
+        right: 36%;
+      }
+
+      .work-about {
+        left: 30px;
+      }
+    }
   }
 
   &-about {
@@ -120,16 +138,17 @@
     }
 
     &__caption {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 1.3vw;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
       padding-top: 10px;
+      font-weight: 200;
     }
 
     &__description {
       padding-top: 30px;
-      font-size: 1.4vw;
-      line-height: 2.8vw;
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 300;
     }
   }
 
@@ -138,7 +157,7 @@
       flex-direction: column;
 
       .work-item__video {
-        width: 50%;
+        width: 60%;
       }
 
       .work-item__image {
@@ -154,8 +173,9 @@
     }
 
     .work-about {
-      width: 80%;
+      width: 60%;
       padding-top: 30px;
+      left: 0;
     }
   }
 }
